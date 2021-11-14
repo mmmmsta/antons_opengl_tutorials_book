@@ -15,16 +15,14 @@ void main () {\n                                                              \
   vec4 pixel = vec4 (0.0, 0.0, 0.0, 1.0);\n                                   \
   ivec2 pixel_coords = ivec2 (gl_GlobalInvocationID.xy);\n                    \
 \n                                                                            \
-float max_x = 5.0;\n                                                          \
-float max_y = 5.0;\n                                                          \
 ivec2 dims = imageSize (img_output);\n                                        \
-float x = (float(pixel_coords.x * 2 - dims.x) / dims.x);\n                    \
-float y = (float(pixel_coords.y * 2 - dims.y) / dims.y);\n                    \
-vec3 ray_o = vec3 (x * max_x, y * max_y, 0.0);\n                              \
+float x = (float(pixel_coords.x * 2 - dims.x) );\n                    \
+float y = (float(pixel_coords.y * 2 - dims.y) );\n                    \
+vec3 ray_o = vec3 (x , y, 0.0);\n                              \
 vec3 ray_d = vec3 (0.0, 0.0, -1.0); // ortho\n                                \
 \n                                                                            \
 vec3 sphere_c = vec3 (0.0, 0.0, -10.0);                                       \
-float sphere_r = 1.0;                                                         \
+float sphere_r = 100.0;                                                         \
 \n                                                                            \
 vec3 omc = ray_o - sphere_c;\n                                                \
 float b = dot (ray_d, omc);\n                                                 \
@@ -33,7 +31,7 @@ float bsqmc = b * b - c;\n                                                    \
 float t = 10000.0;\n                                                          \
 // hit one or both sides\n                                                    \
 if (bsqmc >= 0.0) {\n                                                         \
-  pixel = vec4 (0.4, 0.4, 1.0, 1.0);\n                                        \
+  pixel = vec4 (dot(omc, vec3(1,0,1))/sqrt(dot(omc,omc)), 0.4, 1.0, 1.0);\n                                        \
 }\n                                                                           \
 \n                                                                            \
   imageStore (img_output, pixel_coords, pixel);\n                             \
@@ -61,7 +59,7 @@ int main() {
 
   // texture handle and dimensions
   GLuint tex_output = 0;
-  int tex_w = 512, tex_h = 512;
+  int tex_w = WINDOW_W, tex_h = WINDOW_H;
   { // create the texture
     glGenTextures( 1, &tex_output );
     glActiveTexture( GL_TEXTURE0 );

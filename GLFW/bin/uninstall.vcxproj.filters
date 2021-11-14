@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\40_compute_shader\build\CMakeFiles\98529180a2ccfc89ef561210aa01516d\uninstall.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\mista\Documents\GitHub\glfw-3.3.5\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0C8793F9-01DB-3BA9-AEC9-F770FFC50835}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

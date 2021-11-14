@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{624B4C7B-A7AA-30E9-A9F5-6F155DDBFE72}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\40_compute_shader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\40_compute_shader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\40_compute_shader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\40_compute_shader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mista\Documents\GitHub\glfw-3.3.5\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/mista/Documents/GitHub/glfw-3.3.5/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mista/Documents/GitHub/antons_opengl_tutorials_book/40_compute_shader -BC:/Users/mista/Documents/GitHub/antons_opengl_tutorials_book/40_compute_shader/build --check-stamp-file C:/Users/mista/Documents/GitHub/antons_opengl_tutorials_book/GLFW/bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\mista\Documents\GitHub\glfw-3.3.5\cmake_uninstall.cmake.in;C:\Users\mista\Documents\GitHub\glfw-3.3.5\src\glfw3.pc.in;C:\Users\mista\Documents\GitHub\glfw-3.3.5\src\glfw3Config.cmake.in;C:\Users\mista\Documents\GitHub\glfw-3.3.5\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/mista/Documents/GitHub/glfw-3.3.5/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mista/Documents/GitHub/antons_opengl_tutorials_book/40_compute_shader -BC:/Users/mista/Documents/GitHub/antons_opengl_tutorials_book/40_compute_shader/build --check-stamp-file C:/Users/mista/Documents/GitHub/antons_opengl_tutorials_book/GLFW/bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\mista\Documents\GitHub\glfw-3.3.5\cmake_uninstall.cmake.in;C:\Users\mista\Documents\GitHub\glfw-3.3.5\src\glfw3.pc.in;C:\Users\mista\Documents\GitHub\glfw-3.3.5\src\glfw3Config.cmake.in;C:\Users\mista\Documents\GitHub\glfw-3.3.5\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/mista/Documents/GitHub/glfw-3.3.5/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mista/Documents/GitHub/antons_opengl_tutorials_book/40_compute_shader -BC:/Users/mista/Documents/GitHub/antons_opengl_tutorials_book/40_compute_shader/build --check-stamp-file C:/Users/mista/Documents/GitHub/antons_opengl_tutorials_book/GLFW/bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\mista\Documents\GitHub\glfw-3.3.5\cmake_uninstall.cmake.in;C:\Users\mista\Documents\GitHub\glfw-3.3.5\src\glfw3.pc.in;C:\Users\mista\Documents\GitHub\glfw-3.3.5\src\glfw3Config.cmake.in;C:\Users\mista\Documents\GitHub\glfw-3.3.5\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/mista/Documents/GitHub/glfw-3.3.5/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mista/Documents/GitHub/antons_opengl_tutorials_book/40_compute_shader -BC:/Users/mista/Documents/GitHub/antons_opengl_tutorials_book/40_compute_shader/build --check-stamp-file C:/Users/mista/Documents/GitHub/antons_opengl_tutorials_book/GLFW/bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\mista\Documents\GitHub\glfw-3.3.5\cmake_uninstall.cmake.in;C:\Users\mista\Documents\GitHub\glfw-3.3.5\src\glfw3.pc.in;C:\Users\mista\Documents\GitHub\glfw-3.3.5\src\glfw3Config.cmake.in;C:\Users\mista\Documents\GitHub\glfw-3.3.5\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\40_compute_shader\build\ZERO_CHECK.vcxproj">
+      <Project>{42DE00C9-B879-396C-845B-D16995B8523C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\examples\boing.vcxproj">
+      <Project>{A4BEF9D5-3BB6-3AEA-B178-5B2B8D7E276C}</Project>
+      <Name>boing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\tests\clipboard.vcxproj">
+      <Project>{40207565-4687-33AD-A119-D5D3624B9DC4}</Project>
+      <Name>clipboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\tests\cursor.vcxproj">
+      <Project>{9BA1B9CE-C974-37B4-B6BB-4DB2513A0BF3}</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\tests\empty.vcxproj">
+      <Project>{CA447EDD-BA19-343C-9082-867F89ED0E2E}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\tests\events.vcxproj">
+      <Project>{58CD81DB-3B8E-356B-BBAE-376C1169A1D6}</Project>
+      <Name>events</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\tests\gamma.vcxproj">
+      <Project>{D68D75F0-09CD-3A98-BDE4-5EB04A713808}</Project>
+      <Name>gamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\examples\gears.vcxproj">
+      <Project>{2A6BE2C4-6D33-3D57-8010-4FF4AB95AA33}</Project>
+      <Name>gears</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\src\glfw.vcxproj">
+      <Project>{45835065-1559-3BEA-9334-BEADDEBEA679}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\tests\glfwinfo.vcxproj">
+      <Project>{5C28F569-2AD5-38FD-801F-135E446F707C}</Project>
+      <Name>glfwinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\examples\heightmap.vcxproj">
+      <Project>{6B6A6187-D823-3ACB-9774-B69675570083}</Project>
+      <Name>heightmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\tests\icon.vcxproj">
+      <Project>{59F0692E-4963-3211-BCE1-551F08F840A6}</Project>
+      <Name>icon</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\tests\iconify.vcxproj">
+      <Project>{C7873534-28E1-3346-B01C-5DC9624CD610}</Project>
+      <Name>iconify</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\tests\inputlag.vcxproj">
+      <Project>{236EFDB5-9A24-3B8C-9595-574B1D8BDCCF}</Project>
+      <Name>inputlag</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\tests\joysticks.vcxproj">
+      <Project>{6DB6068D-B445-3C59-9532-45911FAEC9F1}</Project>
+      <Name>joysticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\tests\monitors.vcxproj">
+      <Project>{6900FC34-9C32-3767-B92C-9973E038F93F}</Project>
+      <Name>monitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\tests\msaa.vcxproj">
+      <Project>{4B6D6A3D-AB20-312D-97B5-AEF635F5AB4C}</Project>
+      <Name>msaa</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\examples\offscreen.vcxproj">
+      <Project>{24DFBB15-946F-3D26-8EB2-A1413A5AF2F3}</Project>
+      <Name>offscreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\tests\opacity.vcxproj">
+      <Project>{7F10A413-4D73-342D-A5D9-718838AE2A27}</Project>
+      <Name>opacity</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\examples\particles.vcxproj">
+      <Project>{1B9C1F79-9240-3FF1-B8FD-459366ECBAF2}</Project>
+      <Name>particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\tests\reopen.vcxproj">
+      <Project>{E373130B-0D84-37A4-ABFD-9500CCE5C350}</Project>
+      <Name>reopen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\examples\sharing.vcxproj">
+      <Project>{4A14C369-8AF8-3FBA-A2AA-169ACD7790E4}</Project>
+      <Name>sharing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\examples\simple.vcxproj">
+      <Project>{7AD2D520-C768-3F33-88F2-4B8D1F5206DC}</Project>
+      <Name>simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\examples\splitview.vcxproj">
+      <Project>{AB821786-1776-3266-B71C-64FAAD53B64D}</Project>
+      <Name>splitview</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\tests\tearing.vcxproj">
+      <Project>{14B9BD17-EEBF-3691-A5BD-A1A1DC28F6A0}</Project>
+      <Name>tearing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\tests\threads.vcxproj">
+      <Project>{63B46734-1E9E-33B8-8FC8-272969415383}</Project>
+      <Name>threads</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\tests\timeout.vcxproj">
+      <Project>{5CCFA998-782A-3F19-99C6-93CB3B256246}</Project>
+      <Name>timeout</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\tests\title.vcxproj">
+      <Project>{DB6C52F9-1D7A-36F3-86FC-F5E5A4BE8A16}</Project>
+      <Name>title</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\tests\triangle-vulkan.vcxproj">
+      <Project>{0BAF0CBD-7612-3A3F-BBB4-533977D61AFF}</Project>
+      <Name>triangle-vulkan</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\examples\wave.vcxproj">
+      <Project>{DE98292F-E038-34F4-8B5C-BD3A84E1B61E}</Project>
+      <Name>wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mista\Documents\GitHub\antons_opengl_tutorials_book\GLFW\bin\tests\windows.vcxproj">
+      <Project>{774AC17D-9F72-387A-8CE1-83475F1CCCC3}</Project>
+      <Name>windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

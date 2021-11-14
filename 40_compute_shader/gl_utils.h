@@ -10,7 +10,7 @@
 #include <stdio.h>
 
 // window dimensions
-#define WINDOW_W 512
+#define WINDOW_W 1012
 #define WINDOW_H 512
 
 bool start_gl();
